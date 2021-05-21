@@ -1,0 +1,9 @@
+{% extends 'error.html.twig' %}
+{% block title %}404{% endblock %}
+{% block error %}
+    <div class="notfound-404">
+        <h1> {{ status_code }} </h1>
+    </div>
+    <h2> {{ status_code }} </h2>
+    <h2>  {% trans %}Votre demande ne peut pas être traiter {% endtrans %}</h2>
+{% endblock %}
